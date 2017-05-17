@@ -1,6 +1,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   width:100%px;
+  margin: auto;
 }
 
 p{
@@ -31,6 +32,19 @@ p{
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
+}
+
+.tab{	
+	border-top: 1px solid grey;
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+	background-color:white;
+
+}
+
+.tab:hover{
+	background-color:grey;
 }
 
 .skillbar-title {
@@ -82,4 +96,76 @@ width:110px;
 	line-height:35px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#name {
+	height: 110px;
+}
+
+hr {
+	border-top: 3px solid #394648;
+	border-bottom: 3px solid #394648;
+}
+
+#header {
+	height: auto;
+}
+
+#profile-picture {
+	border-radius: 100%;
+	margin-top: 10px;
+}
+
+#profile-picture {
+	float:left;
+}
+
+
+
+@media screen and (max-width: 450px) {
+	hr{
+		margin-top:0px;
+	}
+	#profile-picture {
+	  	display: block;
+		float:none;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	}
+	#name{
+		text-align: center !important;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width : 530px) {
+
+	#profile-picture {
+	  	display: block;
+		float:none;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	}
+	#name {
+		text-align: center !important;
+	}
+	hr {
+		margin-top:0px;
+	}
+}
+
+@media screen and (min-width: 531px) and (max-width : 992px) {
+	hr {
+		margin-top: 0px;
+	}
 }
